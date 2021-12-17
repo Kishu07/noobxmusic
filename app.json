@@ -1,9 +1,9 @@
 {
-    "name": "Sayonara music stream",
+    "name": "noobXmusic",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "logo": ["https://telegra.ph/file/0b815fcecd6a7da9a4c89.jpg"],
-    "repository": "https://github.com/krisnadiwangga/sayonara-musicvideo",
+    "logo": ["https://telegra.ph/file/8636a5d06bcadcf6a6eff.jpg"],
+    "repository": "https://github.com/userderdead/noobxmusic",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
