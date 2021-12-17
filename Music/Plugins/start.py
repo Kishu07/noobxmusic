@@ -34,7 +34,7 @@ def start_pannel():
         ],
     ]
     return (
-        "🎛 **{BOT_NAME} Merupakan salah satu dari bot telegram yang bisa memutar musik di grup**",
+        "🎛 **{BOT_NAME} I'm Music Player Bot**",
         buttons,
     )
 
@@ -64,11 +64,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"💡 Pemilik Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Owner Bot [{member.mention}] Boom boom owner."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"💡 Admin Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Admin Bot [{member.mention}] Boom boom sudo."
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -76,9 +76,9 @@ async def welcome(_, message: Message):
                 out = start_pannel()
                 await message.reply_text(
                     f"""
-👋 ** Halo senang rasanya bisa bergabung di grup ini**
+👋 ** Thanks For Starting Me**
 
-💡 **Jangan lupa untuk menjadikan saya sebagai admin di grup ini**
+💡 **Take Me To Your Group**
 """,
                     reply_markup=InlineKeyboardMarkup(out[1]),
                     disable_web_page_preview=True
@@ -99,7 +99,7 @@ async def start(_, message: Message):
     out = start_pannel()
     await message.reply_text(
         f"""
-Terima kasih telah memasukkan saya di {message.chat.title}.
+¥€ {message.chat.title}.
 Musik itu hidup.
 
 Untuk bantuan silahkan klik tombol dibawah.
@@ -121,7 +121,7 @@ async def play(_, message: Message):
             text=f"""
 **✨ Selamat Datang {rpk}!
 
-💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
+💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) Simple Music Player Bot Telegram!
 
 💡 Helper Commands » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
 
@@ -147,11 +147,11 @@ async def play(_, message: Message):
 
 ❇️**Judul:** {x["title"]}
 
-⏳ **Durasi:** {round(x["duration"] / 60)} Mins
-👀 **Ditonton:** `{x["view_count"]}`
-👍 **Suka:** `{x["like_count"]}`
-👎 **Tidak suka:** `{x["dislike_count"]}`
-⭐️ **Peringkat Rata-rata:** {x["average_rating"]}
+⏳ **Duration:** {round(x["duration"] / 60)} Mins
+👀 **Count:** `{x["view_count"]}`
+👍 **Likes:** `{x["like_count"]}`
+👎 **Dislikes:** `{x["dislike_count"]}`
+⭐️ **Ratings:** {x["average_rating"]}
 🎥 **Nama channel:** {x["uploader"]}
 📎 **Channel Link:** [Kunjungi Dari Sini]({x["channel_url"]})
 🔗 **Link:** [Link]({x["webpage_url"]})
