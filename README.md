@@ -26,14 +26,14 @@ Get pyrogram (p)  `SESSION` from here:
 - /vstop - stop vplayer
 - /vskip - skip the vsong
 
-# DAFTAR PERINTAH MUSIC PLAYER 
+# NOOB X MUSIC PLAYER 
 ### 📚 NECESSARY COMMANDS 📚
 - /play (audio) - time your song name
 - /play (through audio file) - reply to a audio file
 - /play (link youtube) - after this command paste youtube url
 - /song (audio download) - for download any song
 
-### 📒 DMIN COMMANDS 📒
+### 📒 ADMIN COMMANDS 📒
 - /pause - pause the song
 - /resume - resume the song
 - /end - stop player
